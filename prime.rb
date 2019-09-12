@@ -5,7 +5,7 @@ def prime?(num)
   elsif num == 2 || num == 3
     true
   else
-    range = (2..num).to_a
+    range = (2..(num - 1)).to_a
     range.any? do |int|
       num % int == 0
     end
