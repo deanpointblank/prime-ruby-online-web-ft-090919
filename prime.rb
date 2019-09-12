@@ -3,6 +3,7 @@ def prime?(num)
   if num < 2
     false
   elsif num == 2 || num == 3
+    true
   else
     range = (2..num).to_a
     range.none? do |int|
