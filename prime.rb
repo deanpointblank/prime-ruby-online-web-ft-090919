@@ -6,7 +6,7 @@ def prime?(num)
     true
   else
     range = (2..num).to_a
-    range.none? do |int|
+    range.any? do |int|
       num % int == 0
     end
   end
